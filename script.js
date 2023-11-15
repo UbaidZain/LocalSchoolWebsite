@@ -4,7 +4,6 @@ const navMenuContainer =
 const navMenu = document.getElementsByClassName("nav-menu")[0];
 
 hamburger.addEventListener("click", (e) => {
-  console.log("hello");
   e.target.classList.toggle("is-active");
   navMenuContainer.classList.toggle("is-active");
   navMenu.classList.toggle("is-active");

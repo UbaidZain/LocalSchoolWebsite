@@ -112,6 +112,12 @@ header {
   .menu-item:focus {
     border: 1px solid rgb(216, 1, 1);
   }
+  .current-page {
+    background-color: rgb(216, 1, 1);
+  }
+  .current-page a {
+    color: white;
+  }
 }
 
 /* 
@@ -235,4 +241,24 @@ MAIN
   .footer-links {
     width: 33%;
   }
+}
+.student-number-container {
+  margin-top: 6rem;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  color: rgb(216, 1, 1);
+  font-weight: 200;
+}
+.vision-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+.message-slide,
+.student-number-container {
+  background-color: rgba(238, 236, 236, 0.858);
+}
+.message-slide {
+  padding: 1rem;
 }
