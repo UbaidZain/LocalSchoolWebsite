@@ -134,6 +134,7 @@ MAIN
 .reg-slide {
   margin-top: 6rem;
   flex-direction: column;
+  align-items: center;
 }
 .slide-img-container,
 .slide-img {
@@ -143,6 +144,7 @@ MAIN
 .slide-img {
   border: 6px solid white;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  margin-top: 3rem;
 }
 
 .slide-heading,
@@ -152,16 +154,26 @@ MAIN
   font-weight: bold;
 }
 .slide-text,
-.event-caption {
+.event-caption,
+.slide-sub-heading {
   margin-top: 1rem;
+}
+.slide-text,
+.event-caption {
   font-weight: 200;
+  font-size: 1rem;
+}
+.slide-sub-heading {
+  color: gray;
+  font-weight: bold;
   font-size: 1rem;
 }
 
 @media (min-width: 768px) {
   .reg-slide {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
   }
   .slide-img-container {
     width: 45%;
@@ -169,8 +181,10 @@ MAIN
   .slide-text-container {
     width: 45%;
   }
+  .slide-img {
+    margin-top: none;
+  }
 }
-
 .home-events-container {
   margin-top: 6rem;
   justify-content: center;
@@ -234,7 +248,13 @@ MAIN
   padding: 1.5rem;
   font-weight: 200;
 }
+.rev-slide {
+  flex-direction: column-reverse;
+}
 @media (min-width: 768px) {
+  .rev-slide {
+    flex-direction: row-reverse;
+  }
   .main-footer {
     flex-direction: row;
   }
@@ -242,7 +262,7 @@ MAIN
     width: 33%;
   }
 }
-.student-number-container {
+.center-strip-container {
   margin-top: 6rem;
   padding: 2rem 0;
   align-items: center;
@@ -256,7 +276,7 @@ MAIN
   text-align: center;
 }
 .message-slide,
-.student-number-container {
+.center-strip-container {
   background-color: rgba(238, 236, 236, 0.858);
 }
 .message-slide {
