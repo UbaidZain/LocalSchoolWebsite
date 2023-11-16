@@ -127,6 +127,7 @@ MAIN
   width: 99.7%;
   margin: auto;
   margin-top: 5rem;
+  text-align: center;
 }
 .home-banner {
   width: 100%;
@@ -281,4 +282,21 @@ MAIN
 }
 .message-slide {
   padding: 1rem;
+}
+.slide-list .slide-text {
+  margin-top: 0;
+}
+.strip-item {
+  text-align: center;
+}
+.value-strip {
+  background-color: #e10227;
+  color: white;
+  padding: 0.5rem;
+}
+.values-banner-container {
+  width: 90%;
+}
+.last-slide {
+  margin-top: 3rem;
 }
