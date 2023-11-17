@@ -98,9 +98,17 @@
         <h2 class="slide-heading">SEND US YOUR QUERY</h2>
         <form action="" class="contactus-form flex">
           <div class="form-credentials flex">
-            <input type="text" class="contact-input" />
-            <input type="text" class="contact-input" />
-            <input type="email" class="contact-input" />
+            <input type="text" class="contact-input name" placeholder="Name" />
+            <input
+              type="text"
+              class="contact-input subject"
+              placeholder="Subject"
+            />
+            <input
+              type="email"
+              class="contact-input email"
+              placeholder="E-mail"
+            />
           </div>
 
           <textarea
@@ -109,7 +117,9 @@
             cols="30"
             rows="10"
             class="contact-mess"
+            placeholder="Your message"
           ></textarea>
+          <button class="contact-submit">Send</button>
         </form>
       </div>
     </main>
