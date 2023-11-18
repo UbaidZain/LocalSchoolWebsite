@@ -292,7 +292,7 @@ MAIN
 .value-strip {
   background-color: #e10227;
   color: white;
-  padding: 0.5rem;
+  padding: 2rem 0;
 }
 .values-banner-container {
   width: 90%;
@@ -364,4 +364,80 @@ MAIN
   background-color: black;
   appearance: none;
   border: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(18, 18, 18);
+    color: rgb(174, 174, 174);
+  }
+  header {
+    background-color: rgb(10, 10, 10);
+  }
+  .menu-item:hover,
+  .menu-item:focus {
+    border: 1px solid rgb(120, 3, 3);
+  }
+  .current-page {
+    background-color: rgb(143, 2, 2);
+  }
+
+  .menu-item a {
+    color: rgb(222, 221, 221);
+  }
+  h3,
+  h2 {
+    color: rgb(219, 219, 219);
+  }
+  img {
+    filter: brightness(90%);
+  }
+  header {
+    z-index: 99;
+  }
+  .nav {
+    border-bottom: 1px solid rgb(75, 75, 75);
+  }
+  .slide-img {
+    border: 6px solid rgb(36, 36, 36);
+    box-shadow: rgba(0, 0, 0, 1) 0px 2px 5px;
+  }
+  .center-strip-container {
+    background-color: black;
+    color: rgb(219, 219, 219);
+    box-shadow: rgba(0, 0, 0, 1) 0px 2px 5px;
+  }
+  .center-strip-container i {
+    color: rgb(89, 1, 1);
+  }
+  .center-strip-container .slide-heading {
+    margin-top: 0;
+  }
+  .message-slide {
+    /* background-color: rgb(36, 36, 36); */
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 1) 0px 2px 5px;
+  }
+  .message-slide img {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 2px;
+  }
+  .contact-input,
+  .contact-mess {
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(54, 54, 54);
+  }
+
+  .contact-submit {
+    color: black;
+    background-color: white;
+  }
+
+  .sub-footer {
+    background-color: #810228;
+    color: rgb(235, 234, 234);
+  }
+  .hamburger {
+    color: rgb(219, 219, 219);
+  }
 }
